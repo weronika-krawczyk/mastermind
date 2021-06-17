@@ -47,8 +47,8 @@ class Plansza {
                     if (!cos) {
                         var scoreboard = $("<div>")
                         scoreboard.append("LAST 10 TIMES" + "<br>")
-                        console.log(this.score.docs);
-                        for (let i = 0; i < 10; i++) {
+                        console.log(this.score.docs.length);
+                        for (let i = 0; i > this.score.docs.length; i++) {
                             scoreboard.append(this.score.docs[i].czas + "<br>")
                         }
                         $("#root").append(scoreboard)
